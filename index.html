@@ -6,9 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Etch-a-Sketch</title>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
     </head>
     <body>
+        <form name="pixelQuery">
+            <input type="number" id="size" name="squareSize">
+            <input type="button" id="submit" form="pixelQuery" value="Submit" onclick="grid(document.querySelector('#size').value)">
+            <input type="button" id="reset" form="pixelQuery" value="Reset" onclick="reset()">
+        </form>
         
+        <div id="pixelContainer"></div>
     </body>
 </html>
