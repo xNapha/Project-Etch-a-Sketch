@@ -1,13 +1,81 @@
 html{
-    background-color: gray;
-    margin: 0px;
+    margin:0px;
     padding: 0px;
+}
+body{
+    background: linear-gradient(rgba(146, 196, 230, 1),rgba(190, 146, 230, 1));
+    background-repeat:no-repeat;
+    background-size:100vw 100vh;
+}
+#etchASketch{
+    position:relative;
+    display:block;
+    margin: auto;
+    height: 50em;
+    min-height: 740px;
+    min-width: 740px;
+    width: 40em;
+    top: 30px;
+    border-radius: 30px;
+}
+h1{
+    text-align:center;
+    font-size:80px;
+    font-family: sans-serif;
+}
+form{
+    margin: auto;
+    width: 200px;
 
+}
+#sizeIndicator{
+    text-align:center;
+}
+#size{
+    -webkit-appearance: none;
+    width:200px;
+    cursor: pointer;
+    background:rgba(190, 146, 230, 1);
+}
+#size::-moz-range-thumb{
+    background:rgba(146, 196, 230, 1);
+    filter: brightness(70%);
+}
+#size:hover,
+#reset:hover{
+    filter: brightness(95%);
+}
+#reset{
+    width: 5em;
+    height: 3em;
+    border: 0;
+    border-radius: 20px;
+    text-align:center;
+    background-color:rgba(190, 146, 230, 1);
+    cursor: pointer;
+}
+#clearContainer{
+    margin:auto;
+    width: 50px;
+
+}
+#drawingContainer{
+    position:relative;
+    margin:auto;
+    min-height: 500px;
+    min-width: 500px;
+    width: 30em;
+    height: 30em;
+    top:80px;    
 }
 #pixelContainer{
     display: flex;
-    flex-direction:row;
-    width: 1000px;
-    height: 1000px;
+    min-height: 500px;
+    min-width: 500px;
+    width: 30em;
+    height: 30em;
     flex-wrap: wrap;
+    border: 5px solid black;
+    border-radius: 7px;
 }
+

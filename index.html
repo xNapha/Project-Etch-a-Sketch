@@ -9,12 +9,22 @@
         <script src="script.js" defer></script>
     </head>
     <body>
-        <form name="pixelQuery">
-            <input type="number" id="size" name="squareSize">
-            <input type="button" id="submit" form="pixelQuery" value="Submit" onclick="grid(document.querySelector('#size').value)">
-            <input type="button" id="reset" form="pixelQuery" value="Reset" onclick="reset()">
-        </form>
-        
-        <div id="pixelContainer"></div>
+        <div id="title">
+            <h1>Etch-A-Sketch</h1>
+        </div>
+        <div id="etchASketch">
+            <form id="pixelQuery" name="pixelQuery">
+                <div id="slider">
+                    <p id="sizeIndicator"></p>
+                    <input type="range" min="10" max="100" value ="55" id="size" name="squareSize" onclick="grid(document.querySelector('#size').value)">
+                </div>
+                <div id="clearContainer">
+                    <input type="button" id="reset" form="pixelQuery" value="Reset" onclick="grid(document.querySelector('#size').value)">
+                </div>
+            </form>
+            <div id="drawingContainer">
+                <div id="pixelContainer"></div>
+            </div>
+        </div>
     </body>
 </html>
