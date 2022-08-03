@@ -1,0 +1,6 @@
+Future functions:
+ - RGB button, changes hover event from darken to random colors
+ - click and drag to start sketch, instead of hove
+
+ Future UI changes:
+ - Change font family(font TBA)
